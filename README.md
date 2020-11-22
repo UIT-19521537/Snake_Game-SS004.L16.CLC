@@ -7,10 +7,11 @@
 </p>
 ***
 <pre><strong>1. </strong>Các thành viên trong nhóm:
-</pre>
 <p>-Nguyễn Duy Hoàng (nhóm trưởng)</p>
 <p>-Đào Văn Phú.</p>
 <p>-Trần Phi Long.</p>
+</pre>
+
 
 ***
 
