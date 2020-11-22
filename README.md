@@ -6,11 +6,11 @@
    Đây là đồ án làm nhóm mỗi nhóm gồm từ 3-5 thành viên và mỗi thành viên đều giữ 1 vai trò quan trọng trong đồ án này. 
 </p>
 ***
-<pre><strong>1. </strong>Các thành viên trong nhóm: <code> 
-</code>
-[-Nguyễn Duy Hoàng (nhóm trưởng)](https://github.com/UIT-19521537)
--Trần Phi Long.
--Đào Văn Phú. </pre>
+<pre><strong>1. </strong>Các thành viên trong nhóm:
+</pre>
+<p>-Nguyễn Duy Hoàng (nhóm trưởng)</p>
+<p>-Đào Văn Phú.</p>
+<p>-Trần Phi Long.</p>
 
 ***
 
