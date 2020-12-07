@@ -119,10 +119,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\hhoaHongden\Desktop\Doan\Snake_Game-SS004.L16.CLC\GameSnake\SDL2_image-2.0.3\include;C:\Users\hhoaHongden\Desktop\Doan\Snake_Game-SS004.L16.CLC\GameSnake\SDL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\hhoaHongden\Desktop\Doan\Snake_Game-SS004.L16.CLC\GameSnake\SDL2_image-2.0.3\lib\x86;C:\Users\hhoaHongden\Desktop\Doan\Snake_Game-SS004.L16.CLC\GameSnake\SDL2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">

@@ -3,7 +3,6 @@
 #include <iostream>
 #include <string>
 #include <ctime>
-
 #include "SDL.h"
 #include "Game.h"
 
@@ -67,8 +66,7 @@ void Game::ReplaceFood()
     }
 }
 
-void Game::GameLoop()
-{
+void Game::GameLoop(){
     Uint32 before, second = SDL_GetTicks(), after;
     int frame_time, frames = 0;
 
@@ -100,8 +98,7 @@ void Game::GameLoop()
 
 }
 
-void Game::PollEvents()
-{
+void Game::PollEvents(){
     SDL_Event e;
     while (SDL_PollEvent(&e))
     {
@@ -137,18 +134,15 @@ void Game::PollEvents()
     }
 }
 
-int Game::GetSize()
-{
+int Game::GetSize(){
     return size;
 }
 
-void Game::GrowBody(int quantity)
-{
+void Game::GrowBody(int quantity){
     growing += quantity;
 }
 
-void Game::Update()
-{
+void Game::Update(){
     if (!alive)
         return;
 
