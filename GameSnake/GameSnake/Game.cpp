@@ -23,7 +23,7 @@ void Game::Run()
 {
     if (SDL_Init(SDL_INIT_VIDEO) < 0)
     {
-        cerr << "SDL could not initialize! SDL_Error: " << SDL_GetError() << endl;
+        cerr << "Khong the khoi tao. Loi la: " << SDL_GetError() << endl;
         exit(EXIT_FAILURE);
     }
     window = SDL_CreateWindow("Snake Game", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
@@ -31,14 +31,14 @@ void Game::Run()
 
     if (window == NULL)
     {
-        cout << "Window could not be created! SDL_Error: " << SDL_GetError() << endl;
+        cout << "Khong khoi tao duoc cua so. Loi La:  " << SDL_GetError() << endl;
         exit(EXIT_FAILURE);
     }
 
     renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
     if (renderer == NULL)
     {
-        cout << "Renderer could not be created! SDL_Error: " << SDL_GetError() << endl;
+        cout << "Khong the khoi tao Renderer. Loi la: " << SDL_GetError() << endl;
         exit(EXIT_FAILURE);
     }
 
@@ -68,7 +68,7 @@ void Game::ReplaceFood()
 
 void Game::GameLoop(){
     Uint32 before, second = SDL_GetTicks(), after;
-    int frame_time, frames = 0;
+    int frame_time, frames = 1;
 
     while (running)
     {
@@ -169,7 +169,6 @@ void Game::Update(){
         break;
     }
 
-    // Wrap
     if (pos.x < 0) pos.x = GRID_WIDTH - 1;
     else if (pos.x > GRID_WIDTH - 1) pos.x = 0;
 
@@ -209,7 +208,6 @@ void Game::Update(){
     head.y = new_y;
 
     Block& next = grid[head.x][head.y];
-    // Check if there's food over here
     if (next == Block::food)
     {
         score++;
@@ -264,7 +262,6 @@ void Game::Render()
     else       SDL_SetRenderDrawColor(renderer, 0xFF, 0x00, 0x00, 0xFF);
     SDL_RenderFillRect(renderer, &block);
 
-    //cap nhap man hinh
     SDL_RenderPresent(renderer);
 }
 
